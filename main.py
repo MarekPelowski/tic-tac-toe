@@ -14,23 +14,43 @@ def tksleep(t):
     from the internet
     '''
 
+def disable_every_button():
+    square_2.configure(state=DISABLED)
+    square_3.configure(state=DISABLED)
+    square_4.configure(state=DISABLED)
+    square_5.configure(state=DISABLED)
+    square_6.configure(state=DISABLED)
+    square_7.configure(state=DISABLED)
+    square_8.configure(state=DISABLED)
+    square_9.configure(state=DISABLED)
+
+
 def button_click(num):
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
+        tksleep()
+
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
+
     elif num == 3:
         square_3.configure(image=cross_image, height=165, width=160, state=DISABLED)
+
     elif num == 4:
         square_4.configure(image=cross_image, height=140, width=160, state=DISABLED)
+
     elif num == 5:
         square_5.configure(image=cross_image, height=140, width=150, state=DISABLED)
+
     elif num == 6:
         square_6.configure(image=cross_image, height=140, width=160, state=DISABLED)
+
     elif num == 7:
         square_7.configure(image=cross_image, height=155, width=160, state=DISABLED)
+
     elif num == 8:
         square_8.configure(image=cross_image, height=155, width=150, state=DISABLED)
+
     elif num == 9:
         square_9.configure(image=cross_image, height=155, width=160, state=DISABLED)
 
