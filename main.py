@@ -5,6 +5,15 @@ root.geometry("500x600")
 root.resizable(0, 0)
 root.configure(bg="#575757")
 
+def tksleep(t):
+    ms = int(t+1000)
+    var = IntVar(root)
+    root.after(ms, var.set, 1)
+    root.wait_variable(var)
+    '''
+    from the internet
+    '''
+
 def button_click(num):
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
