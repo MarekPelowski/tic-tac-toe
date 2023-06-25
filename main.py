@@ -31,55 +31,55 @@ def random_square():
     while True:
         if random_number == 1:
             if square_1_enable in square_enable:
-                print("a")
+                square_1.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 2:
             if square_2_enable in square_enable:
-                print("a")
+                square_2.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 3:
             if square_3_enable in square_enable:
-                print("a")
+                square_3.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 4:
             if square_4_enable in square_enable:
-                print("a")
+                square_4.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 5:
             if square_5_enable in square_enable:
-                print("a")
+                square_5.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 6:
             if square_6_enable in square_enable:
-                print("a")
+                square_6.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 7:
             if square_7_enable in square_enable:
-                print("a")
+                square_7.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 8:
             if square_2_enable in square_enable:
-                print("8")
+                square_8.configure(image=circle_image)
                 break
             else:
                 continue
         elif random_number == 9:
             if square_2_enable in square_enable:
-                print("9")
+                square_9.configure(image=circle_image)
                 break
             else:
                 continue
