@@ -6,15 +6,15 @@ root.geometry("500x600")
 root.resizable(0, 0)
 root.configure(bg="#575757")
 
-square_1_enable = None
-square_2_enable = None
-square_3_enable = None
-square_4_enable = None
-square_5_enable = None
-square_6_enable = None
-square_7_enable = None
-square_8_enable = None
-square_9_enable = None
+square_1_enable = 0
+square_2_enable = 0
+square_3_enable = 0
+square_4_enable = 0
+square_5_enable = 0
+square_6_enable = 0
+square_7_enable = 0
+square_8_enable = 0
+square_9_enable = 0
 
 square_enable = [
     square_1_enable,
