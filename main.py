@@ -1,19 +1,20 @@
 from tkinter import *
+from random import randint
 
 root = Tk()
 root.geometry("500x600")
 root.resizable(0, 0)
 root.configure(bg="#575757")
 
-square_1_enable = True
-square_2_enable = True
-square_3_enable = True
-square_4_enable = True
-square_5_enable = True
-square_6_enable = True
-square_7_enable = True
-square_8_enable = True
-square_9_enable = True
+square_1_enable = None
+square_2_enable = None
+square_3_enable = None
+square_4_enable = None
+square_5_enable = None
+square_6_enable = None
+square_7_enable = None
+square_8_enable = None
+square_9_enable = None
 
 square_enable = [
     square_1_enable,
@@ -21,6 +22,67 @@ square_enable = [
     square_4_enable, square_5_enable,
     square_6_enable, square_7_enable,
     square_8_enable, square_9_enable]
+
+
+def random_square():
+    random_number = randint(1, 9)
+
+
+    while True:
+        if random_number == 1:
+            if square_1_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 2:
+            if square_2_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 3:
+            if square_3_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 4:
+            if square_4_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 5:
+            if square_5_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 6:
+            if square_6_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 7:
+            if square_7_enable in square_enable:
+                print("a")
+                break
+            else:
+                continue
+        elif random_number == 8:
+            if square_2_enable in square_enable:
+                print("8")
+                break
+            else:
+                continue
+        elif random_number == 9:
+            if square_2_enable in square_enable:
+                print("9")
+                break
+            else:
+                continue
 
 def tksleep(t):
     ms = int(t+1000)
@@ -64,9 +126,12 @@ def disable_every_button():
 
 
 def button_click(num):
+
+
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
         tksleep(3)
+        button_enable_check()
 
 
     elif num == 2:
