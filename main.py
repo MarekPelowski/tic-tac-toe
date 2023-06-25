@@ -31,11 +31,25 @@ def tksleep(t):
     from the internet
     '''
 
-#def button_enable_check():
-#    if square_1["state"] == NORMAL:
-#        pass
-#    elif square_1["state"] == DISABLED:
-#        pass
+def button_enable_check():
+    if square_1["state"] == DISABLED:
+        square_enable.pop(square_1_enable)
+    elif square_2["state"] == DISABLED:
+        square_enable.pop(square_2_enable)
+    elif square_3["state"] == DISABLED:
+        square_enable.pop(square_3_enable)
+    elif square_4["state"] == DISABLED:
+        square_enable.pop(square_4_enable)
+    elif square_5["state"] == DISABLED:
+        square_enable.pop(square_5_enable)
+    elif square_6["state"] == DISABLED:
+        square_enable.pop(square_6_enable)
+    elif square_7["state"] == DISABLED:
+        square_enable.pop(square_7_enable)
+    elif square_8["state"] == DISABLED:
+        square_enable.pop(square_8_enable)
+    elif square_9["state"] == DISABLED:
+        square_enable.pop(square_9_enable)
 
 def disable_every_button():
     square_2.configure(state=DISABLED)
