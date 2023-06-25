@@ -5,6 +5,23 @@ root.geometry("500x600")
 root.resizable(0, 0)
 root.configure(bg="#575757")
 
+square_1_enable = True
+square_2_enable = True
+square_3_enable = True
+square_4_enable = True
+square_5_enable = True
+square_6_enable = True
+square_7_enable = True
+square_8_enable = True
+square_9_enable = True
+
+square_enable = [
+    square_1_enable,
+    square_2_enable, square_3_enable,
+    square_4_enable, square_5_enable,
+    square_6_enable, square_7_enable,
+    square_8_enable, square_9_enable]
+
 def tksleep(t):
     ms = int(t+1000)
     var = IntVar(root)
@@ -13,6 +30,12 @@ def tksleep(t):
     '''
     from the internet
     '''
+
+#def button_enable_check():
+#    if square_1["state"] == NORMAL:
+#        pass
+#    elif square_1["state"] == DISABLED:
+#        pass
 
 def disable_every_button():
     square_2.configure(state=DISABLED)
@@ -25,10 +48,12 @@ def disable_every_button():
     square_9.configure(state=DISABLED)
 
 
+
 def button_click(num):
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
-        tksleep()
+        tksleep(3)
+
 
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
