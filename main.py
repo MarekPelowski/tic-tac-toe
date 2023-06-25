@@ -130,8 +130,8 @@ def button_click(num):
 
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
-        tksleep(3)
         button_enable_check()
+        random_square()
 
 
     elif num == 2:
