@@ -30,59 +30,59 @@ def random_square():
 
     while True:
         if random_number == 1:
+            button_enable_check()
             if square_1_enable in square_enable:
-                square_1.configure(image=circle_image)
+                square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 2:
+            button_enable_check()
             if square_2_enable in square_enable:
-                square_2.configure(image=circle_image)
+                square_2.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 3:
+            button_enable_check()
             if square_3_enable in square_enable:
-                square_3.configure(image=circle_image)
+                square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 4:
+            button_enable_check()
             if square_4_enable in square_enable:
-                square_4.configure(image=circle_image)
+                square_4.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 5:
+            button_enable_check()
             if square_5_enable in square_enable:
-                square_5.configure(image=circle_image)
+                square_5.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 6:
+            button_enable_check()
             if square_6_enable in square_enable:
-                square_6.configure(image=circle_image)
+                square_6.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 7:
+            button_enable_check()
             if square_7_enable in square_enable:
-                square_7.configure(image=circle_image)
+                square_7.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 8:
-            if square_2_enable in square_enable:
-                square_8.configure(image=circle_image)
+            button_enable_check()
+            if square_8_enable in square_enable:
+                square_8.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
         elif random_number == 9:
-            if square_2_enable in square_enable:
-                square_9.configure(image=circle_image)
+            button_enable_check()
+            if square_9_enable in square_enable:
+                square_9.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 break
-            else:
-                continue
+
 
 def tksleep(t):
     ms = int(t+1000)
@@ -95,23 +95,23 @@ def tksleep(t):
 
 def button_enable_check():
     if square_1["state"] == DISABLED:
-        square_enable.pop(square_1_enable)
+        square_enable.remove(square_1_enable)
     elif square_2["state"] == DISABLED:
-        square_enable.pop(square_2_enable)
+        square_enable.remove(square_2_enable)
     elif square_3["state"] == DISABLED:
-        square_enable.pop(square_3_enable)
+        square_enable.remove(square_3_enable)
     elif square_4["state"] == DISABLED:
-        square_enable.pop(square_4_enable)
+        square_enable.remove(square_4_enable)
     elif square_5["state"] == DISABLED:
-        square_enable.pop(square_5_enable)
+        square_enable.remove(square_5_enable)
     elif square_6["state"] == DISABLED:
-        square_enable.pop(square_6_enable)
+        square_enable.remove(square_6_enable)
     elif square_7["state"] == DISABLED:
-        square_enable.pop(square_7_enable)
+        square_enable.remove(square_7_enable)
     elif square_8["state"] == DISABLED:
-        square_enable.pop(square_8_enable)
+        square_enable.remove(square_8_enable)
     elif square_9["state"] == DISABLED:
-        square_enable.pop(square_9_enable)
+        square_enable.remove(square_9_enable)
 
 def disable_every_button():
     square_2.configure(state=DISABLED)
@@ -130,34 +130,42 @@ def button_click(num):
 
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
-        button_enable_check()
+#        button_enable_check()
         random_square()
+
 
 
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
+        random_square()
 
     elif num == 3:
         square_3.configure(image=cross_image, height=165, width=160, state=DISABLED)
+        random_square()
 
     elif num == 4:
         square_4.configure(image=cross_image, height=140, width=160, state=DISABLED)
+        random_square()
 
     elif num == 5:
         square_5.configure(image=cross_image, height=140, width=150, state=DISABLED)
+        random_square()
 
     elif num == 6:
         square_6.configure(image=cross_image, height=140, width=160, state=DISABLED)
+        random_square()
 
     elif num == 7:
         square_7.configure(image=cross_image, height=155, width=160, state=DISABLED)
+        random_square()
 
     elif num == 8:
         square_8.configure(image=cross_image, height=155, width=150, state=DISABLED)
+        random_square()
 
     elif num == 9:
         square_9.configure(image=cross_image, height=155, width=160, state=DISABLED)
-
+        random_square()
 
 overlay_image = PhotoImage(file=r"overlay.png")
 cross_image = PhotoImage(file=r"cross.png")
