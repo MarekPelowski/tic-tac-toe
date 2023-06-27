@@ -5,6 +5,7 @@ root = Tk()
 root.geometry("500x600")
 root.resizable(0, 0)
 root.configure(bg="#575757")
+root.title("tic tac toe")
 
 square_1_enable = True
 square_2_enable = True
