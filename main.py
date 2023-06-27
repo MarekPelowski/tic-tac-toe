@@ -182,6 +182,43 @@ def random_square():
                 continue
 
 
+
+        # if square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == True:
+        #     square_9.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == True and square_9_enable == False:
+        #     square_8.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == True and square_8_enable == False and square_9_enable == False:
+        #     square_7.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == True and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+        #     square_6.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == True and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+        #     square_5.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == True and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+        #     square_4.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == False and square_3_enable == True and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+        #     square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == False and square_2_enable == True and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+        #     square_2.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+        #
+        # elif square_1_enable == True and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+        #     square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
+        #     break
+
 overlay_image = PhotoImage(file=r"overlay.png")
 cross_image = PhotoImage(file=r"cross.png")
 circle_image = PhotoImage(file=r"circle.png")
@@ -242,5 +279,11 @@ elif square_8["state"] == DISABLED:
 
 elif square_9["state"] == DISABLED:
     square_9_enable = False
+
+
+
+
+
+
 
 root.mainloop()
