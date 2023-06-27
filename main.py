@@ -17,12 +17,45 @@ square_7_enable = True
 square_8_enable = True
 square_9_enable = True
 
+counter = 0
+
 square_enable = [
     square_1_enable,
     square_2_enable, square_3_enable,
     square_4_enable, square_5_enable,
     square_6_enable, square_7_enable,
     square_8_enable, square_9_enable]
+
+def counter_function():
+    if counter == 4:
+
+        if square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == True:
+            square_9.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == True and square_9_enable == False:
+            square_8.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == True and square_8_enable == False and square_9_enable == False:
+            square_7.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == True and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+            square_6.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == True and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+            square_5.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == True and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+            square_4.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == False and square_3_enable == True and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+            square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+        elif square_1_enable == False and square_2_enable == True and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+            square_2.configure(image=circle_image, height=165, width=160, state=DISABLED)
+
+
+        elif square_1_enable == True and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
+            square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
 
 def tksleep(t):
     ms = int(t+1000)
@@ -95,129 +128,140 @@ def button_click(num):
 
 
 def random_square():
-    global square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable, square_7_enable, square_8_enable, square_9_enable
+    global counter, square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable, square_7_enable, square_8_enable, square_9_enable
+
+
 
     while True:
         random_number = randint(1, 9)
 
         if random_number == 1:
             if square_1_enable == True:
-                square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
+                counter = counter + 1
+                square_1.configure(image=circle_image, height=140, width=140, state=DISABLED)
                 square_1_enable = False
                 break
+
         elif random_number == 1:
             if square_1_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 2:
             if square_2_enable == True:
+                counter = counter + 1
                 square_2.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_2_enable = False
                 break
         elif random_number == 2:
             if square_2_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 3:
             if square_3_enable == True:
+                counter = counter + 1
                 square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_3_enable = False
                 break
         elif random_number == 3:
             if square_3_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 4:
             if square_4_enable == True:
+                counter = counter + 1
                 square_4.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_4_enable = False
                 break
         elif random_number == 4:
             if square_4_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 5:
             if square_5_enable == True:
+                counter = counter + 1
                 square_5.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_5_enable = False
                 break
         elif random_number == 5:
             if square_5_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 6:
             if square_6_enable == True:
+                counter = counter + 1
                 square_6.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_6_enable = False
                 break
         elif random_number == 6:
             if square_6_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 7:
             if square_7_enable == True:
+                counter = counter + 1
                 square_7.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_7_enable = False
                 break
-        elif random_number == 7:
+        elif random_number > 7:
             if square_7_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 8:
             if square_8_enable == True:
+                counter = counter + 1
                 square_8.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_8_enable = False
                 break
-        elif random_number == 8:
+        elif random_number > 8:
             if square_8_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
+
 
         if random_number == 9:
             if square_9_enable == True:
+                counter = counter + 1
                 square_9.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_9_enable = False
                 break
         elif random_number == 9:
+
             if square_9_enable == False:
-                continue
+                if counter == 4:
+                    break
+                else:
+                    continue
 
-
-
-        # if square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == True:
-        #     square_9.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == True and square_9_enable == False:
-        #     square_8.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == True and square_8_enable == False and square_9_enable == False:
-        #     square_7.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == True and square_7_enable == False and square_8_enable == False and square_9_enable == False:
-        #     square_6.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == True and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
-        #     square_5.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == False and square_3_enable == False and square_4_enable == True and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
-        #     square_4.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == False and square_3_enable == True and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
-        #     square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == False and square_2_enable == True and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
-        #     square_2.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
-        #
-        # elif square_1_enable == True and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
-        #     square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
-        #     break
 
 overlay_image = PhotoImage(file=r"overlay.png")
 cross_image = PhotoImage(file=r"cross.png")
