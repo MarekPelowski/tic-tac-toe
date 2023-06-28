@@ -110,52 +110,63 @@ def disable_every_button():
 
 
 def button_click(num):
-    global square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable, square_7_enable, square_8_enable, square_9_enable
+    global cross_win_1, cross_win_2, cross_win_3, cross_win_4, cross_win_5, cross_win_6, cross_win_7, cross_win_8, cross_win_9,\
+        cross_win_1, square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable,\
+        square_7_enable, square_8_enable, square_9_enable
 
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
         square_1_enable = False
         random_square()
+        cross_win_1 = True
 
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
         square_2_enable = False
         random_square()
+        cross_win_2 = True
 
     elif num == 3:
         square_3.configure(image=cross_image, height=165, width=160, state=DISABLED)
         square_3_enable = False
         random_square()
+        cross_win_3 = True
 
     elif num == 4:
         square_4.configure(image=cross_image, height=140, width=160, state=DISABLED)
         square_4_enable = False
         random_square()
+        cross_win_4 = True
 
     elif num == 5:
         square_5.configure(image=cross_image, height=140, width=150, state=DISABLED)
         square_5_enable = False
         random_square()
+        cross_win_5 = True
 
     elif num == 6:
         square_6.configure(image=cross_image, height=140, width=160, state=DISABLED)
         square_6_enable = False
         random_square()
+        cross_win_6 = True
 
     elif num == 7:
         square_7.configure(image=cross_image, height=155, width=160, state=DISABLED)
         square_7_enable = False
         random_square()
+        cross_win_7 = True
 
     elif num == 8:
         square_8.configure(image=cross_image, height=155, width=150, state=DISABLED)
         square_8_enable = False
         random_square()
+        cross_win_8 = True
 
     elif num == 9:
         square_9.configure(image=cross_image, height=155, width=160, state=DISABLED)
         square_9_enable = False
         random_square()
+        cross_win_9 = True
 
 
 def random_square():
