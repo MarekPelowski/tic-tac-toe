@@ -55,8 +55,30 @@ square_enable = [
     square_8_enable, square_9_enable]
 
 
-def win(brk):
-    pass
+def win_circle_func():
+    if circle_win_1 == True and circle_win_2 == True and circle_win_3 == True:
+        print("circle wins")
+
+    elif circle_win_1 == True and circle_win_4 == True and circle_win_7 == True:
+        print("circle wins")
+
+    elif circle_win_3 == True and circle_win_6 == True and circle_win_9 == True:
+        print("circle wins")
+
+    elif circle_win_7 == True and circle_win_8 == True and circle_win_9 == True:
+        print("circle wins")
+
+    elif circle_win_2 == True and circle_win_5 == True and circle_win_8 == True:
+        print("circle wins")
+
+    elif circle_win_4 == True and circle_win_5 == True and circle_win_6 == True:
+        print("circle wins")
+
+    elif circle_win_1 == True and circle_win_5 == True and circle_win_9  == True:
+        print("circle wins")
+
+    elif circle_win_3 == True and circle_win_5 == True and circle_win_7 == True:
+        print("circle wins")
 
 def counter_function():
     if counter == 4:
