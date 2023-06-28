@@ -170,8 +170,9 @@ def button_click(num):
 
 
 def random_square():
-    global counter, square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable, square_7_enable, square_8_enable, square_9_enable
-
+    global circle_win_1, circle_win_2, circle_win_3, circle_win_4, circle_win_5, circle_win_6, circle_win_7, circle_win_8, circle_win_9,\
+        counter, square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable, square_7_enable,\
+        square_8_enable, square_9_enable
 
 
     while True:
@@ -182,6 +183,7 @@ def random_square():
                 counter = counter + 1
                 square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_1_enable = False
+                circle_win_1 = True
                 break
 
         elif random_number == 1:
@@ -197,6 +199,7 @@ def random_square():
                 counter = counter + 1
                 square_2.configure(image=circle_image, height=165, width=150, state=DISABLED)
                 square_2_enable = False
+                circle_win_2 = True
                 break
         elif random_number == 2:
             if square_2_enable == False:
@@ -211,6 +214,7 @@ def random_square():
                 counter = counter + 1
                 square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
                 square_3_enable = False
+                circle_win_3 = True
                 break
         elif random_number == 3:
             if square_3_enable == False:
@@ -225,6 +229,7 @@ def random_square():
                 counter = counter + 1
                 square_4.configure(image=circle_image, height=140, width=160, state=DISABLED)
                 square_4_enable = False
+                circle_win_4 = True
                 break
         elif random_number == 4:
             if square_4_enable == False:
@@ -239,6 +244,7 @@ def random_square():
                 counter = counter + 1
                 square_5.configure(image=circle_image, height=140, width=150, state=DISABLED)
                 square_5_enable = False
+                circle_win_5 = True
                 break
         elif random_number == 5:
             if square_5_enable == False:
@@ -253,6 +259,7 @@ def random_square():
                 counter = counter + 1
                 square_6.configure(image=circle_image, height=140, width=160, state=DISABLED)
                 square_6_enable = False
+                circle_win_6 = True
                 break
         elif random_number == 6:
             if square_6_enable == False:
@@ -267,6 +274,7 @@ def random_square():
                 counter = counter + 1
                 square_7.configure(image=circle_image, height=155, width=160, state=DISABLED)
                 square_7_enable = False
+                circle_win_7 = True
                 break
         elif random_number > 7:
             if square_7_enable == False:
@@ -281,6 +289,7 @@ def random_square():
                 counter = counter + 1
                 square_8.configure(image=circle_image, height=155, width=150, state=DISABLED)
                 square_8_enable = False
+                circle_win_8 = True
                 break
         elif random_number > 8:
             if square_8_enable == False:
@@ -295,6 +304,7 @@ def random_square():
                 counter = counter + 1
                 square_9.configure(image=circle_image, height=155, width=160, state=DISABLED)
                 square_9_enable = False
+                circle_win_9 = True
                 break
         elif random_number == 9:
 
