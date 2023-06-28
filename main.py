@@ -7,6 +7,26 @@ root.resizable(0, 0)
 root.configure(bg="#575757")
 root.title("tic tac toe")
 
+circle_win_1 = False
+circle_win_2 = False
+circle_win_3 = False
+circle_win_4 = False
+circle_win_5 = False
+circle_win_6 = False
+circle_win_7 = False
+circle_win_8 = False
+circle_win_9 = False
+
+cross_win_1 = False
+cross_win_2 = False
+cross_win_3 = False
+cross_win_4 = False
+cross_win_5 = False
+cross_win_6 = False
+cross_win_7 = False
+cross_win_8 = False
+cross_win_9 = False
+
 square_1_enable = True
 square_2_enable = True
 square_3_enable = True
@@ -19,12 +39,24 @@ square_9_enable = True
 
 counter = 0
 
+
+cross_win = [
+    square_1_enable,
+    square_2_enable, square_3_enable,
+    square_4_enable, square_5_enable,
+    square_6_enable, square_7_enable,
+    square_8_enable, square_9_enable]
+
 square_enable = [
     square_1_enable,
     square_2_enable, square_3_enable,
     square_4_enable, square_5_enable,
     square_6_enable, square_7_enable,
     square_8_enable, square_9_enable]
+
+
+def win(brk):
+    pass
 
 def counter_function():
     if counter == 4:
@@ -52,7 +84,6 @@ def counter_function():
 
         elif square_1_enable == False and square_2_enable == True and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
             square_2.configure(image=circle_image, height=165, width=160, state=DISABLED)
-
 
         elif square_1_enable == True and square_2_enable == False and square_3_enable == False and square_4_enable == False and square_5_enable == False and square_6_enable == False and square_7_enable == False and square_8_enable == False and square_9_enable == False:
             square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
