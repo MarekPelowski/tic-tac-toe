@@ -80,6 +80,31 @@ def win_circle_func():
     elif circle_win_3 == True and circle_win_5 == True and circle_win_7 == True:
         print("circle wins")
 
+def win_cross_func():
+    if cross_win_1 == True and cross_win_2 == True and cross_win_3 == True:
+        print("circle wins")
+
+    elif cross_win_1 == True and cross_win_4 == True and cross_win_7 == True:
+        print("circle wins")
+
+    elif cross_win_3 == True and cross_win_6 == True and cross_win_9 == True:
+        print("circle wins")
+
+    elif cross_win_7 == True and cross_win_8 == True and cross_win_9 == True:
+        print("circle wins")
+
+    elif cross_win_2 == True and cross_win_5 == True and cross_win_8 == True:
+        print("circle wins")
+
+    elif cross_win_4 == True and cross_win_5 == True and cross_win_6 == True:
+        print("circle wins")
+
+    elif cross_win_1 == True and cross_win_5 == True and cross_win_9  == True:
+        print("circle wins")
+
+    elif cross_win_3 == True and cross_win_5 == True and cross_win_7 == True:
+        print("circle wins")
+
 def counter_function():
     if counter == 4:
 
@@ -141,6 +166,8 @@ def button_click(num):
         square_1_enable = False
         random_square()
         cross_win_1 = True
+        win_cross_func()
+        win_circle_func()
 
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
