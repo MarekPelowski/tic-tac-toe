@@ -401,6 +401,8 @@ def random_square():
 overlay_image = PhotoImage(file=r"overlay.png")
 cross_image = PhotoImage(file=r"cross.png")
 circle_image = PhotoImage(file=r"circle.png")
+horizontal_line_image = PhotoImage(file=r"horizontal_line.png")
+vertical_line_image = PhotoImage(file=r"vertical_line.png")
 
 overlay = Label(root, image=overlay_image, bg="#575757", fg="#575757", borderwidth=0)
 overlay.pack()
