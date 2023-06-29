@@ -54,25 +54,55 @@ square_enable = [
     square_6_enable, square_7_enable,
     square_8_enable, square_9_enable]
 
+# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+# horizontal_line.place(x=20, y=60)
+#
+# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+# horizontal_line.place(x=20, y=225)
+#
+# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+# horizontal_line.place(x=20, y=390)
+#
+#
+# vertical_line = Label(image=vertical_line_image, borderwidth=0)
+# vertical_line.place(x=60, y=20)
+#
+# vertical_line = Label(image=vertical_line_image, borderwidth=0)
+# vertical_line.place(x=225, y=20)
+#
+# vertical_line = Label(image=vertical_line_image, borderwidth=0)
+# vertical_line.place(x=390, y=20)
 
 def win_circle_func():
     if circle_win_1 == True and circle_win_2 == True and circle_win_3 == True:
         print("circle wins")
+        horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+        horizontal_line.place(x=20, y=60)
 
     elif circle_win_1 == True and circle_win_4 == True and circle_win_7 == True:
         print("circle wins")
+        vertical_line = Label(image=vertical_line_image, borderwidth=0)
+        vertical_line.place(x=60, y=20)
 
     elif circle_win_3 == True and circle_win_6 == True and circle_win_9 == True:
         print("circle wins")
+        vertical_line = Label(image=vertical_line_image, borderwidth=0)
+        vertical_line.place(x=390, y=20)
 
     elif circle_win_7 == True and circle_win_8 == True and circle_win_9 == True:
         print("circle wins")
+        horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+        horizontal_line.place(x=20, y=390)
 
     elif circle_win_2 == True and circle_win_5 == True and circle_win_8 == True:
         print("circle wins")
+        vertical_line = Label(image=vertical_line_image, borderwidth=0)
+        vertical_line.place(x=225, y=20)
 
     elif circle_win_4 == True and circle_win_5 == True and circle_win_6 == True:
         print("circle wins")
+        horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+        horizontal_line.place(x=20, y=225)
 
     elif circle_win_1 == True and circle_win_5 == True and circle_win_9  == True:
         print("circle wins")
@@ -83,21 +113,33 @@ def win_circle_func():
 def win_cross_func():
     if cross_win_1 == True and cross_win_2 == True and cross_win_3 == True:
         print("cross wins")
+        horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+        horizontal_line.place(x=20, y=60)
 
     elif cross_win_1 == True and cross_win_4 == True and cross_win_7 == True:
         print("cross wins")
+        vertical_line = Label(image=vertical_line_image, borderwidth=0)
+        vertical_line.place(x=60, y=20)
 
     elif cross_win_3 == True and cross_win_6 == True and cross_win_9 == True:
         print("cross wins")
+        vertical_line = Label(image=vertical_line_image, borderwidth=0)
+        vertical_line.place(x=390, y=20)
 
     elif cross_win_7 == True and cross_win_8 == True and cross_win_9 == True:
         print("cross wins")
+        horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+        horizontal_line.place(x=20, y=390)
 
     elif cross_win_2 == True and cross_win_5 == True and cross_win_8 == True:
         print("cross wins")
+        vertical_line = Label(image=vertical_line_image, borderwidth=0)
+        vertical_line.place(x=225, y=20)
 
     elif cross_win_4 == True and cross_win_5 == True and cross_win_6 == True:
         print("cross wins")
+        horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+        horizontal_line.place(x=20, y=225)
 
     elif cross_win_1 == True and cross_win_5 == True and cross_win_9  == True:
         print("cross wins")
@@ -461,24 +503,7 @@ elif square_8["state"] == DISABLED:
 elif square_9["state"] == DISABLED:
     square_9_enable = False
 
-# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
-# horizontal_line.place(x=20, y=60)
-#
-# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
-# horizontal_line.place(x=20, y=225)
-#
-# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
-# horizontal_line.place(x=20, y=390)
-#
-#
-# vertical_line = Label(image=vertical_line_image, borderwidth=0)
-# vertical_line.place(x=60, y=20)
-#
-# vertical_line = Label(image=vertical_line_image, borderwidth=0)
-# vertical_line.place(x=225, y=20)
-#
-# vertical_line = Label(image=vertical_line_image, borderwidth=0)
-# vertical_line.place(x=390, y=20)
+
 
 
 root.mainloop()
