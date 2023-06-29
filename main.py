@@ -461,6 +461,24 @@ elif square_8["state"] == DISABLED:
 elif square_9["state"] == DISABLED:
     square_9_enable = False
 
+# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+# horizontal_line.place(x=20, y=60)
+#
+# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+# horizontal_line.place(x=20, y=225)
+#
+# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+# horizontal_line.place(x=20, y=390)
+#
+#
+# vertical_line = Label(image=vertical_line_image, borderwidth=0)
+# vertical_line.place(x=60, y=20)
+#
+# vertical_line = Label(image=vertical_line_image, borderwidth=0)
+# vertical_line.place(x=225, y=20)
+#
+# vertical_line = Label(image=vertical_line_image, borderwidth=0)
+# vertical_line.place(x=390, y=20)
 
 
 root.mainloop()
