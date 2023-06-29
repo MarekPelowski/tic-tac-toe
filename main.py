@@ -40,7 +40,6 @@ square_9_enable = True
 counter = 0
 
 
-
 cross_win = [
     square_1_enable,
     square_2_enable, square_3_enable,
@@ -459,5 +458,7 @@ elif square_8["state"] == DISABLED:
 
 elif square_9["state"] == DISABLED:
     square_9_enable = False
+
+
 
 root.mainloop()
