@@ -327,6 +327,8 @@ def random_square():
                 circle_win_1 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
 
         elif random_number == 1:
@@ -345,6 +347,8 @@ def random_square():
                 circle_win_2 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number == 2:
             if square_2_enable == False:
@@ -362,6 +366,8 @@ def random_square():
                 circle_win_3 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number == 3:
             if square_3_enable == False:
@@ -379,6 +385,8 @@ def random_square():
                 circle_win_4 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number == 4:
             if square_4_enable == False:
@@ -396,6 +404,8 @@ def random_square():
                 circle_win_5 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number == 5:
             if square_5_enable == False:
@@ -413,6 +423,8 @@ def random_square():
                 circle_win_6 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number == 6:
             if square_6_enable == False:
@@ -430,6 +442,8 @@ def random_square():
                 circle_win_7 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number > 7:
             if square_7_enable == False:
@@ -447,6 +461,8 @@ def random_square():
                 circle_win_8 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number > 8:
             if square_8_enable == False:
@@ -464,6 +480,8 @@ def random_square():
                 circle_win_9 = True
                 win_cross_func()
                 win_circle_func()
+                if circle_win == True:
+                    disable_every_button()
                 break
         elif random_number == 9:
 
