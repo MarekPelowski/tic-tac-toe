@@ -50,116 +50,81 @@ square_enable = [
     square_6_enable, square_7_enable,
     square_8_enable, square_9_enable]
 
-# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
-# horizontal_line.place(x=20, y=60)
-#
-# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
-# horizontal_line.place(x=20, y=225)
-#
-# horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
-# horizontal_line.place(x=20, y=390)
-#
-#
-# vertical_line = Label(image=vertical_line_image, borderwidth=0)
-# vertical_line.place(x=60, y=20)
-#
-# vertical_line = Label(image=vertical_line_image, borderwidth=0)
-# vertical_line.place(x=225, y=20)
-#
-# vertical_line = Label(image=vertical_line_image, borderwidth=0)
-# vertical_line.place(x=390, y=20)
-
 def win_circle_func():
     global circle_win
     if circle_win_1 == True and circle_win_2 == True and circle_win_3 == True:
-        print("circle wins")
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=60)
         circle_win = True
 
     elif circle_win_1 == True and circle_win_4 == True and circle_win_7 == True:
-        print("circle wins")
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=60, y=20)
         circle_win = True
 
     elif circle_win_3 == True and circle_win_6 == True and circle_win_9 == True:
-        print("circle wins")
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=390, y=20)
         circle_win = True
 
     elif circle_win_7 == True and circle_win_8 == True and circle_win_9 == True:
-        print("circle wins")
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=390)
         circle_win = True
 
     elif circle_win_2 == True and circle_win_5 == True and circle_win_8 == True:
-        print("circle wins")
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=225, y=20)
         circle_win = True
 
     elif circle_win_4 == True and circle_win_5 == True and circle_win_6 == True:
-        print("circle wins")
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=225)
         circle_win = True
 
     elif circle_win_1 == True and circle_win_5 == True and circle_win_9  == True:
-        print("circle wins")
         circle_win = True
 
     elif circle_win_3 == True and circle_win_5 == True and circle_win_7 == True:
-        print("circle wins")
         circle_win = True
 
 def win_cross_func():
 
     global cross_win, circle_win
     if cross_win_1 == True and cross_win_2 == True and cross_win_3 == True:
-        print("cross wins")
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=60)
         cross_win = True
 
     elif cross_win_1 == True and cross_win_4 == True and cross_win_7 == True:
-        print("cross wins")
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=60, y=20)
         cross_win = True
 
     elif cross_win_3 == True and cross_win_6 == True and cross_win_9 == True:
-        print("cross wins")
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=390, y=20)
         cross_win = True
 
     elif cross_win_7 == True and cross_win_8 == True and cross_win_9 == True:
-        print("cross wins")
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=390)
         cross_win = True
 
     elif cross_win_2 == True and cross_win_5 == True and cross_win_8 == True:
-        print("cross wins")
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=225, y=20)
         cross_win = True
 
     elif cross_win_4 == True and cross_win_5 == True and cross_win_6 == True:
-        print("cross wins")
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=225)
         cross_win = True
 
     elif cross_win_1 == True and cross_win_5 == True and cross_win_9  == True:
-        print("cross wins")
         cross_win = True
 
     elif cross_win_3 == True and cross_win_5 == True and cross_win_7 == True:
-        print("cross wins")
         cross_win = True
 
 def enable_available_buttons():
@@ -239,7 +204,6 @@ def button_click(num):
 
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
-        square_enable.remove(square_1_enable)
         square_1_enable = False
         random_square()
         cross_win_1 = True
@@ -250,7 +214,6 @@ def button_click(num):
 
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
-        square_enable.remove(square_2_enable)
         square_2_enable = False
         random_square()
         cross_win_2 = True
@@ -261,7 +224,6 @@ def button_click(num):
 
     elif num == 3:
         square_3.configure(image=cross_image, height=165, width=160, state=DISABLED)
-        square_enable.remove(square_3_enable)
         square_3_enable = False
         random_square()
         cross_win_3 = True
@@ -272,7 +234,6 @@ def button_click(num):
 
     elif num == 4:
         square_4.configure(image=cross_image, height=140, width=160, state=DISABLED)
-        square_enable.remove(square_4_enable)
         square_4_enable = False
         random_square()
         cross_win_4 = True
@@ -284,7 +245,6 @@ def button_click(num):
 
     elif num == 5:
         square_5.configure(image=cross_image, height=140, width=150, state=DISABLED)
-        square_enable.remove(square_5_enable)
         square_5_enable = False
         random_square()
         cross_win_5 = True
@@ -294,7 +254,6 @@ def button_click(num):
             disable_every_button()
     elif num == 6:
         square_6.configure(image=cross_image, height=140, width=160, state=DISABLED)
-        square_enable.remove(square_6_enable)
         square_6_enable = False
         random_square()
         cross_win_6 = True
@@ -305,7 +264,6 @@ def button_click(num):
 
     elif num == 7:
         square_7.configure(image=cross_image, height=155, width=160, state=DISABLED)
-        square_enable.remove(square_7_enable)
         square_7_enable = False
         random_square()
         cross_win_7 = True
@@ -316,7 +274,6 @@ def button_click(num):
 
     elif num == 8:
         square_8.configure(image=cross_image, height=155, width=150, state=DISABLED)
-        square_enable.remove(square_8_enable)
         square_8_enable = False
         random_square()
         cross_win_8 = True
@@ -327,7 +284,6 @@ def button_click(num):
 
     elif num == 9:
         square_9.configure(image=cross_image, height=155, width=160, state=DISABLED)
-        square_enable.remove(square_9_enable)
         square_9_enable = False
         random_square()
         cross_win_9 = True
@@ -350,7 +306,6 @@ def random_square():
             if square_1_enable == True:
                 counter = counter + 1
                 square_1.configure(image=circle_image, height=165, width=160, state=DISABLED)
-                square_enable.remove(square_1_enable)
                 square_1_enable = False
                 circle_win_1 = True
                 win_cross_func()
@@ -371,7 +326,6 @@ def random_square():
             if square_2_enable == True:
                 counter = counter + 1
                 square_2.configure(image=circle_image, height=165, width=150, state=DISABLED)
-                square_enable.remove(square_2_enable)
                 square_2_enable = False
                 circle_win_2 = True
                 win_cross_func()
@@ -391,7 +345,6 @@ def random_square():
             if square_3_enable == True:
                 counter = counter + 1
                 square_3.configure(image=circle_image, height=165, width=160, state=DISABLED)
-                square_enable.remove(square_3_enable)
                 square_3_enable = False
                 circle_win_3 = True
                 win_cross_func()
@@ -411,7 +364,6 @@ def random_square():
             if square_4_enable == True:
                 counter = counter + 1
                 square_4.configure(image=circle_image, height=140, width=160, state=DISABLED)
-                square_enable.remove(square_4_enable)
                 square_4_enable = False
                 circle_win_4 = True
                 win_cross_func()
@@ -431,7 +383,6 @@ def random_square():
             if square_5_enable == True:
                 counter = counter + 1
                 square_5.configure(image=circle_image, height=140, width=150, state=DISABLED)
-                square_enable.remove(square_5_enable)
                 square_5_enable = False
                 circle_win_5 = True
                 win_cross_func()
@@ -451,7 +402,6 @@ def random_square():
             if square_6_enable == True:
                 counter = counter + 1
                 square_6.configure(image=circle_image, height=140, width=160, state=DISABLED)
-                square_enable.remove(square_6_enable)
                 square_6_enable = False
                 circle_win_6 = True
                 win_cross_func()
@@ -471,7 +421,6 @@ def random_square():
             if square_7_enable == True:
                 counter = counter + 1
                 square_7.configure(image=circle_image, height=155, width=160, state=DISABLED)
-                square_enable.remove(square_7_enable)
                 square_7_enable = False
                 circle_win_7 = True
                 win_cross_func()
@@ -491,7 +440,6 @@ def random_square():
             if square_8_enable == True:
                 counter = counter + 1
                 square_8.configure(image=circle_image, height=155, width=150, state=DISABLED)
-                square_enable.remove(square_8_enable)
                 square_8_enable = False
                 circle_win_8 = True
                 win_cross_func()
@@ -511,7 +459,6 @@ def random_square():
             if square_9_enable == True:
                 counter = counter + 1
                 square_9.configure(image=circle_image, height=155, width=160, state=DISABLED)
-                square_enable.remove(square_9_enable)
                 square_9_enable = False
                 circle_win_9 = True
                 win_cross_func()
