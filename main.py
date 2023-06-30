@@ -202,6 +202,7 @@ def tksleep(t):
     '''
 
 def disable_every_button():
+    square_1.configure(state=DISABLED)
     square_2.configure(state=DISABLED)
     square_3.configure(state=DISABLED)
     square_4.configure(state=DISABLED)
