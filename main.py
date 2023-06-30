@@ -445,6 +445,8 @@ cross_image = PhotoImage(file=r"cross.png")
 circle_image = PhotoImage(file=r"circle.png")
 horizontal_line_image = PhotoImage(file=r"horizontal_line.png")
 vertical_line_image = PhotoImage(file=r"vertical_line.png")
+diagonal_line_1_image = PhotoImage(file=r"diagonal_line_1.png")
+diagonal_line_2_image = PhotoImage(file=r"diagonal_line_2.png")
 
 overlay = Label(root, image=overlay_image, bg="#575757", fg="#575757", borderwidth=0)
 overlay.pack()
