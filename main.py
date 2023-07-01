@@ -129,23 +129,23 @@ def win_cross_func():
 
 def enable_available_buttons():
     if square_1_enable == True:
-        square_1.configure(image=cross_image, height=165, width=160, state=NORMAL)
+        square_1.configure(image=background_color, height=165, width=160, state=NORMAL)
     elif square_2_enable == True:
-        square_2.configure(state=NORMAL)
+        square_2.configure(image=background_color, height=165, width=150, state=NORMAL)
     elif square_3_enable == True:
-        square_3.configure(state=NORMAL)
+        square_3.configure(image=background_color, height=165, width=160, state=NORMAL)
     elif square_4_enable == True:
-        square_4.configure(state=NORMAL)
+        square_4.configure(image=background_color, height=140, width=160, state=NORMAL)
     elif square_5_enable == True:
-        square_5.configure(state=NORMAL)
+        square_5.configure(image=background_color, height=140, width=150, state=NORMAL)
     elif square_6_enable == True:
-        square_6.configure(state=NORMAL)
+        square_6.configure(image=background_color, height=140, width=160, state=NORMAL)
     elif square_7_enable == True:
-        square_7.configure(state=NORMAL)
+        square_7.configure(image=background_color, height=155, width=160, state=NORMAL)
     elif square_8_enable == True:
-        square_8.configure(state=NORMAL)
+        square_8.configure(image=background_color, height=155, width=150, state=NORMAL)
     elif square_9_enable == True:
-        square_9.configure(state=NORMAL)
+        square_9.configure(image=background_color, height=155, width=160, state=NORMAL)
 
 def counter_function():
     if counter == 4:
