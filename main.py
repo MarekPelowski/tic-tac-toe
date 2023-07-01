@@ -129,7 +129,7 @@ def win_cross_func():
 
 def enable_available_buttons():
     if square_1_enable == True:
-        square_1.configure(state=NORMAL)
+        square_1.configure(image=cross_image, height=165, width=160, state=NORMAL)
     elif square_2_enable == True:
         square_2.configure(state=NORMAL)
     elif square_3_enable == True:
@@ -205,6 +205,9 @@ def button_click(num):
     if num == 1:
         square_1.configure(image=cross_image, height=165, width=160, state=DISABLED)
         square_1_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_1 = True
         win_cross_func()
@@ -215,6 +218,9 @@ def button_click(num):
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
         square_2_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_2 = True
         win_cross_func()
@@ -225,6 +231,9 @@ def button_click(num):
     elif num == 3:
         square_3.configure(image=cross_image, height=165, width=160, state=DISABLED)
         square_3_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_3 = True
         win_cross_func()
@@ -235,6 +244,9 @@ def button_click(num):
     elif num == 4:
         square_4.configure(image=cross_image, height=140, width=160, state=DISABLED)
         square_4_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_4 = True
         win_cross_func()
@@ -246,6 +258,9 @@ def button_click(num):
     elif num == 5:
         square_5.configure(image=cross_image, height=140, width=150, state=DISABLED)
         square_5_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_5 = True
         win_cross_func()
@@ -255,6 +270,9 @@ def button_click(num):
     elif num == 6:
         square_6.configure(image=cross_image, height=140, width=160, state=DISABLED)
         square_6_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_6 = True
         win_cross_func()
@@ -265,6 +283,9 @@ def button_click(num):
     elif num == 7:
         square_7.configure(image=cross_image, height=155, width=160, state=DISABLED)
         square_7_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_7 = True
         win_cross_func()
@@ -275,6 +296,9 @@ def button_click(num):
     elif num == 8:
         square_8.configure(image=cross_image, height=155, width=150, state=DISABLED)
         square_8_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_8 = True
         win_cross_func()
@@ -285,6 +309,9 @@ def button_click(num):
     elif num == 9:
         square_9.configure(image=cross_image, height=155, width=160, state=DISABLED)
         square_9_enable = False
+        disable_every_button()
+        tksleep(3)
+        enable_available_buttons()
         random_square()
         cross_win_9 = True
         win_cross_func()
