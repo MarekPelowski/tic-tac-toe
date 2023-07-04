@@ -1,6 +1,6 @@
 from tkinter import *
 from random import randint
-from PIL import Image, ImageFont
+from PIL import ImageTk, Image
 
 root = Tk()
 root.geometry("500x500")
@@ -130,21 +130,21 @@ def win_cross_func():
 def enable_available_buttons():
     if square_1_enable == True:
         square_1.configure(image=background_color, height=165, width=160, state=NORMAL)
-    elif square_2_enable == True:
+    if square_2_enable == True:
         square_2.configure(image=background_color, height=165, width=150, state=NORMAL)
-    elif square_3_enable == True:
+    if square_3_enable == True:
         square_3.configure(image=background_color, height=165, width=160, state=NORMAL)
-    elif square_4_enable == True:
+    if square_4_enable == True:
         square_4.configure(image=background_color, height=140, width=160, state=NORMAL)
-    elif square_5_enable == True:
+    if square_5_enable == True:
         square_5.configure(image=background_color, height=140, width=150, state=NORMAL)
-    elif square_6_enable == True:
+    if square_6_enable == True:
         square_6.configure(image=background_color, height=140, width=160, state=NORMAL)
-    elif square_7_enable == True:
+    if square_7_enable == True:
         square_7.configure(image=background_color, height=155, width=160, state=NORMAL)
-    elif square_8_enable == True:
+    if square_8_enable == True:
         square_8.configure(image=background_color, height=155, width=150, state=NORMAL)
-    elif square_9_enable == True:
+    if square_9_enable == True:
         square_9.configure(image=background_color, height=155, width=160, state=NORMAL)
 
 def counter_function():
@@ -208,12 +208,13 @@ def button_click(num):
         disable_every_button()
         tksleep(3)
         enable_available_buttons()
-        random_square()
+        if cross_win == True:
+            disable_every_button()
+        elif cross_win == False:
+            random_square()
         cross_win_1 = True
         win_cross_func()
         win_circle_func()
-        if cross_win == True:
-            disable_every_button()
 
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
@@ -566,5 +567,8 @@ elif square_8["state"] == DISABLED:
 
 elif square_9["state"] == DISABLED:
     square_9_enable = False
+
+
+
 
 root.mainloop()
