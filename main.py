@@ -52,6 +52,10 @@ square_enable = [
     square_6_enable, square_7_enable,
     square_8_enable, square_9_enable]
 
+def restart_program():
+    python = sys.executable
+    os.execl(python, python, *sys.argv)
+
 def win_circle_func():
     global circle_win
     if circle_win_1 == True and circle_win_2 == True and circle_win_3 == True:
