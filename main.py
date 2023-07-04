@@ -1,6 +1,8 @@
 from tkinter import *
 from random import randint
-from PIL import ImageTk, Image
+from PIL import Image, ImageTk
+import os
+import sys
 
 root = Tk()
 root.geometry("500x500")
