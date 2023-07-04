@@ -66,15 +66,23 @@ def delete_every_widget():
 
 
 
-
 def try_again():
-#    delete_every_widget()
+    tksleep(3)
+
     if cross_win == True:
-        print("cross wins")
+        delete_every_widget()
+        win_text = Label(root, text="Cross wins!", font=("Helvetica", 30, "bold"))
+        win_text.pack(pady=100)
+
     elif circle_win == True:
-        print("circle wins")
+        delete_every_widget()
+        win_text = Label(root, text="Circle wins!", font=("Helvetica", 30, "bold"))
+        win_text.pack(pady=100)
+
     else:
-        print("draw")
+        delete_every_widget()
+        draw_text = Label(root, text="Draw!", font=("Helvetica", 30, "bold"))
+        draw_text.pack(pady=100)
 
 
 
