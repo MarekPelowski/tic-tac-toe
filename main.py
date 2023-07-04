@@ -1,6 +1,6 @@
 from tkinter import *
 from random import randint
-
+from PIL import Image, ImageFont
 
 root = Tk()
 root.geometry("500x500")
