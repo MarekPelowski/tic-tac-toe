@@ -65,7 +65,6 @@ def delete_every_widget():
     horizontal_line.destroy()
     vertical_line.destroy()
 
-
 def try_again():
 
     if cross_win == True:
@@ -89,8 +88,6 @@ def try_again():
         draw_text.pack(pady=100)
         restart_button = Button(root, text="try again", font=("consolas", 40), bg="white", fg="#a18c47", borderwidth=0, command=restart_program)
         restart_button.pack(pady=20)
-
-
 
 def restart_program():
     python = sys.executable
@@ -204,7 +201,6 @@ def win_cross_func():
         tksleep(3)
         try_again()
 
-
 def enable_available_buttons():
     if square_1_enable == True:
         square_1.configure(image=background_color, height=165, width=160, state=NORMAL)
@@ -294,7 +290,6 @@ def button_click(num):
         elif cross_win == False:
             random_square()
 
-
     elif num == 2:
         square_2.configure(image=cross_image, height=165, width=150, state=DISABLED)
         square_2_enable = False
@@ -310,7 +305,6 @@ def button_click(num):
             random_square()
         cross_win_2 = True
 
-
     elif num == 3:
         square_3.configure(image=cross_image, height=165, width=160, state=DISABLED)
         square_3_enable = False
@@ -325,8 +319,6 @@ def button_click(num):
         elif cross_win == False:
             random_square()
 
-
-
     elif num == 4:
         square_4.configure(image=cross_image, height=140, width=160, state=DISABLED)
         square_4_enable = False
@@ -340,8 +332,6 @@ def button_click(num):
             disable_every_button()
         elif cross_win == False:
             random_square()
-
-
 
     elif num == 5:
         square_5.configure(image=cross_image, height=140, width=150, state=DISABLED)
@@ -385,8 +375,6 @@ def button_click(num):
         elif cross_win == False:
             random_square()
 
-
-
     elif num == 8:
         square_8.configure(image=cross_image, height=155, width=150, state=DISABLED)
         square_8_enable = False
@@ -400,8 +388,6 @@ def button_click(num):
             disable_every_button()
         elif cross_win == False:
             random_square()
-
-
 
     elif num == 9:
         square_9.configure(image=cross_image, height=155, width=160, state=DISABLED)
@@ -417,15 +403,10 @@ def button_click(num):
         elif cross_win == False:
             random_square()
 
-
-
-
-
 def random_square():
     global circle_win_1, circle_win_2, circle_win_3, circle_win_4, circle_win_5, circle_win_6, circle_win_7, circle_win_8, circle_win_9,\
         counter, square_1_enable, square_2_enable, square_3_enable, square_4_enable, square_5_enable, square_6_enable, square_7_enable,\
         square_8_enable, square_9_enable
-
 
     while True:
         random_number = randint(1, 9)
@@ -449,7 +430,6 @@ def random_square():
                 else:
                     continue
 
-
         if random_number == 2:
             if square_2_enable == True:
                 counter = counter + 1
@@ -467,7 +447,6 @@ def random_square():
                     break
                 else:
                     continue
-
 
         if random_number == 3:
             if square_3_enable == True:
@@ -487,7 +466,6 @@ def random_square():
                 else:
                     continue
 
-
         if random_number == 4:
             if square_4_enable == True:
                 counter = counter + 1
@@ -505,7 +483,6 @@ def random_square():
                     break
                 else:
                     continue
-
 
         if random_number == 5:
             if square_5_enable == True:
@@ -525,7 +502,6 @@ def random_square():
                 else:
                     continue
 
-
         if random_number == 6:
             if square_6_enable == True:
                 counter = counter + 1
@@ -543,7 +519,6 @@ def random_square():
                     break
                 else:
                     continue
-
 
         if random_number == 7:
             if square_7_enable == True:
@@ -563,7 +538,6 @@ def random_square():
                 else:
                     continue
 
-
         if random_number == 8:
             if square_8_enable == True:
                 counter = counter + 1
@@ -581,7 +555,6 @@ def random_square():
                     break
                 else:
                     continue
-
 
         if random_number == 9:
             if square_9_enable == True:
@@ -670,8 +643,5 @@ elif square_8["state"] == DISABLED:
 
 elif square_9["state"] == DISABLED:
     square_9_enable = False
-
-
-
 
 root.mainloop()
