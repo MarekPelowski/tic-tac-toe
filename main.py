@@ -44,13 +44,6 @@ square_9_enable = True
 
 counter = 0
 
-square_enable = [
-    square_1_enable,
-    square_2_enable, square_3_enable,
-    square_4_enable, square_5_enable,
-    square_6_enable, square_7_enable,
-    square_8_enable, square_9_enable]
-
 def delete_every_widget():
     overlay.destroy()
     square_1.destroy()
