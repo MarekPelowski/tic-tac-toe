@@ -133,10 +133,12 @@ def win_circle_func():
 
     elif circle_win_1 == True and circle_win_5 == True and circle_win_9  == True:
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_3 == True and circle_win_5 == True and circle_win_7 == True:
         circle_win = True
+        tksleep(3)
         try_again()
 
 def win_cross_func():
@@ -419,6 +421,7 @@ def random_square():
         elif random_number == 1:
             if square_1_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -437,6 +440,7 @@ def random_square():
         elif random_number == 2:
             if square_2_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -455,6 +459,7 @@ def random_square():
         elif random_number == 3:
             if square_3_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -473,6 +478,7 @@ def random_square():
         elif random_number == 4:
             if square_4_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -491,6 +497,7 @@ def random_square():
         elif random_number == 5:
             if square_5_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -509,6 +516,7 @@ def random_square():
         elif random_number == 6:
             if square_6_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -527,6 +535,7 @@ def random_square():
         elif random_number > 7:
             if square_7_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -545,6 +554,7 @@ def random_square():
         elif random_number > 8:
             if square_8_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
@@ -564,6 +574,7 @@ def random_square():
 
             if square_9_enable == False:
                 if counter == 4:
+                    try_again()
                     break
                 else:
                     continue
