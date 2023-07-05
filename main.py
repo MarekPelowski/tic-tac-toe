@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import os
 import sys
 
+
 root = Tk()
 root.geometry("500x500")
 root.resizable(0, 0)
@@ -69,20 +70,19 @@ def delete_every_widget():
 
 def try_again():
 
-
     if cross_win == True:
         delete_every_widget()
-        win_text = Label(root, text="Cross wins!", font=("Helvetica", 30, "bold"))
+        win_text = Label(root, text="Cross wins!", font=("Helvetica", 60, "bold"), bg="#575757", fg="#3e9129")
         win_text.pack(pady=100)
 
     elif circle_win == True:
         delete_every_widget()
-        win_text = Label(root, text="Circle wins!", font=("Helvetica", 30, "bold"))
+        win_text = Label(root, text="Circle wins!", font=("Helvetica", 60, "bold"), bg="#575757", fg="#475aa1")
         win_text.pack(pady=100)
 
     else:
         delete_every_widget()
-        draw_text = Label(root, text="Draw!", font=("Helvetica", 30, "bold"))
+        draw_text = Label(root, text="Draw!", font=("Helvetica", 60, "bold"), bg="#575757", fg="#a18c47")
         draw_text.pack(pady=100)
 
 
