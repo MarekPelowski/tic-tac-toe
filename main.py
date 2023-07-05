@@ -63,11 +63,12 @@ def delete_every_widget():
     square_7.destroy()
     square_8.destroy()
     square_9.destroy()
-
+    horizontal_line.destroy()
+    vertical_line.destroy()
 
 
 def try_again():
-    tksleep(3)
+
 
     if cross_win == True:
         delete_every_widget()
@@ -91,41 +92,48 @@ def restart_program():
     os.execl(python, python, *sys.argv)
 
 def win_circle_func():
-    global circle_win
+    global circle_win, horizontal_line, vertical_line
+
     if circle_win_1 == True and circle_win_2 == True and circle_win_3 == True:
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=60)
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_1 == True and circle_win_4 == True and circle_win_7 == True:
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=60, y=20)
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_3 == True and circle_win_6 == True and circle_win_9 == True:
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=390, y=20)
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_7 == True and circle_win_8 == True and circle_win_9 == True:
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=390)
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_2 == True and circle_win_5 == True and circle_win_8 == True:
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=225, y=20)
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_4 == True and circle_win_5 == True and circle_win_6 == True:
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=225)
         circle_win = True
+        tksleep(3)
         try_again()
 
     elif circle_win_1 == True and circle_win_5 == True and circle_win_9  == True:
@@ -137,50 +145,58 @@ def win_circle_func():
         try_again()
 
 def win_cross_func():
+    global cross_win, horizontal_line, vertical_line
 
-    global cross_win, circle_win
     if cross_win_1 == True and cross_win_2 == True and cross_win_3 == True:
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=60)
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_1 == True and cross_win_4 == True and cross_win_7 == True:
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=60, y=20)
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_3 == True and cross_win_6 == True and cross_win_9 == True:
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=390, y=20)
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_7 == True and cross_win_8 == True and cross_win_9 == True:
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=390)
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_2 == True and cross_win_5 == True and cross_win_8 == True:
         vertical_line = Label(image=vertical_line_image, borderwidth=0)
         vertical_line.place(x=225, y=20)
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_4 == True and cross_win_5 == True and cross_win_6 == True:
         horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
         horizontal_line.place(x=20, y=225)
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_1 == True and cross_win_5 == True and cross_win_9  == True:
         cross_win = True
+        tksleep(3)
         try_again()
 
     elif cross_win_3 == True and cross_win_5 == True and cross_win_7 == True:
         cross_win = True
+        tksleep(3)
         try_again()
 
 
@@ -424,7 +440,6 @@ def random_square():
         elif random_number == 1:
             if square_1_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -444,7 +459,6 @@ def random_square():
         elif random_number == 2:
             if square_2_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -464,7 +478,6 @@ def random_square():
         elif random_number == 3:
             if square_3_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -484,7 +497,6 @@ def random_square():
         elif random_number == 4:
             if square_4_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -504,7 +516,6 @@ def random_square():
         elif random_number == 5:
             if square_5_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -524,7 +535,6 @@ def random_square():
         elif random_number == 6:
             if square_6_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -544,7 +554,6 @@ def random_square():
         elif random_number > 7:
             if square_7_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -564,7 +573,6 @@ def random_square():
         elif random_number > 8:
             if square_8_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -585,7 +593,6 @@ def random_square():
 
             if square_9_enable == False:
                 if counter == 4:
-                    try_again()
                     break
                 else:
                     continue
@@ -598,6 +605,9 @@ vertical_line_image = PhotoImage(file=r"vertical_line.png")
 diagonal_line_1_image = PhotoImage(file=r"diagonal_line_1.png")
 diagonal_line_2_image = PhotoImage(file=r"diagonal_line_2.png")
 background_color = PhotoImage(file=r"background_color.png")
+
+horizontal_line = Label(image=horizontal_line_image, borderwidth=0)
+vertical_line = Label(image=vertical_line_image, borderwidth=0)
 
 overlay = Label(root, image=overlay_image, bg="#575757", fg="#575757", borderwidth=0)
 overlay.pack()
