@@ -74,16 +74,23 @@ def try_again():
         delete_every_widget()
         win_text = Label(root, text="Cross wins!", font=("Helvetica", 60, "bold"), bg="#575757", fg="#3e9129")
         win_text.pack(pady=100)
+        restart_button = Button(root, text="try again", font=("consolas", 40), bg="white", fg="#a18c47", borderwidth=0, command=restart_program)
+        restart_button.pack(pady=20)
+
 
     elif circle_win == True:
         delete_every_widget()
         win_text = Label(root, text="Circle wins!", font=("Helvetica", 60, "bold"), bg="#575757", fg="#475aa1")
         win_text.pack(pady=100)
+        restart_button = Button(root, text="try again", font=("consolas", 40), bg="white", fg="#a18c47", borderwidth=0, command=restart_program)
+        restart_button.pack(pady=20)
 
     else:
         delete_every_widget()
         draw_text = Label(root, text="Draw!", font=("Helvetica", 60, "bold"), bg="#575757", fg="#a18c47")
         draw_text.pack(pady=100)
+        restart_button = Button(root, text="try again", font=("consolas", 40), bg="white", fg="#a18c47", borderwidth=0, command=restart_program)
+        restart_button.pack(pady=20)
 
 
 
