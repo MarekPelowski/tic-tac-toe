@@ -7,7 +7,7 @@ root = Tk()
 root.geometry("500x500")
 root.resizable(0, 0)
 root.configure(bg="#575757")
-root.title("tic tac toe")
+root.title("TIC TAC TOE")
 
 cross_win = False
 circle_win = False
